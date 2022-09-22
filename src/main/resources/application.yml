@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/authenticator?schema=public
+
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: admin
+      password: admin
+    realmImportFile: hbsites-realm.json
