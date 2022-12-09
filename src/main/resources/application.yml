@@ -8,6 +8,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/authenticator?schema=public
 
 keycloak:
+  cors: true
   server:
     contextPath: /auth
     adminUser:

@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 
 public class EmbeddedKeycloakRequestFilter extends AbstractRequestFilter implements Filter {
-
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws UnsupportedEncodingException {
         servletRequest.setCharacterEncoding("UTF-8");
