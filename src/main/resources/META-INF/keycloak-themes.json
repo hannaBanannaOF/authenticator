@@ -1,0 +1,6 @@
+{
+  "themes": [{
+    "name": "hbsites",
+    "types": ["login"]
+  }]
+}
