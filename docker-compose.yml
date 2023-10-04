@@ -21,18 +21,6 @@ services:
     ports:
       - "5432:5432"
 
-  pgadmin:
-    container_name: pgadmin
-    image: "dpage/pgadmin4:latest"
-    environment:
-      PGADMIN_DEFAULT_EMAIL: hannanicollew@outlook.com
-      PGADMIN_DEFAULT_PASSWORD: postgres
-    tty: true
-    ports:
-      - "5050:80"
-    networks:
-      - local
-
   keycloak:
     container_name: keycloak
     build:
@@ -50,7 +38,7 @@ services:
       KC_HEALTH_ENABLED: 'true'
       KC_HTTP_ENABLED: 'true'
       KC_METRICS_ENABLED: 'true'
-      KC_HOSTNAME_URL: http://localhost:8083
+      KC_HOSTNAME_URL: http://10.0.2.2:8083
       KC_PROXY: reencrypt
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: password
