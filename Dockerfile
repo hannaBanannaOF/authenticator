@@ -1,7 +1,7 @@
 # Documentation:
 #  https://www.keycloak.org/server/containers
 
-ARG KEYCLOAK_VERSION
+ARG KEYCLOAK_VERSION=latest
 
 FROM quay.io/keycloak/keycloak:$KEYCLOAK_VERSION as builder
 
